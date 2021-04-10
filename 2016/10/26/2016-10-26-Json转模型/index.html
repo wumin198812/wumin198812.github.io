@@ -20,20 +20,25 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="JSON转模型是我们做iOS开发的基础技能，本文将通过YYModel这个框架安全快速的完成JSON到模型的转换，其中还会介绍到一款好用的插件ESJsonFormat。  1、首先创建模型类创建模型类我们可以通过ESJsonFormat这款插件快速完成。 使用方法： 将光标移动到代码行中 如下图的13行 然后点击Window-&gt;ESJsonFormat-&gt;Input JSON Wind">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo创建博客">
-<meta property="og:url" content="http://example.com/2021/04/10/2021-4-10-%E4%BD%BF%E7%94%A8hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="JSON转模型 For YYModel">
+<meta property="og:url" content="http://example.com/2016/10/26/2016-10-26-Json%E8%BD%AC%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="小鱼儿爸爸的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="JSON转模型是我们做iOS开发的基础技能，本文将通过YYModel这个框架安全快速的完成JSON到模型的转换，其中还会介绍到一款好用的插件ESJsonFormat。  1、首先创建模型类创建模型类我们可以通过ESJsonFormat这款插件快速完成。 使用方法： 将光标移动到代码行中 如下图的13行 然后点击Window-&gt;ESJsonFormat-&gt;Input JSON Wind">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-10T05:15:46.268Z">
-<meta property="article:modified_time" content="2021-04-10T12:38:38.514Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006y8lVagw1f95tr49ed7j30no0csdir.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006y8lVagw1f97s13l4b9j30jv0e8dhp.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006y8lVagw1f97s46k95tj30k30dydj9.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006y8lVagw1f97s6yp9hmj30iw0b840m.jpg">
+<meta property="article:published_time" content="2016-10-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-10T12:57:59.898Z">
 <meta property="article:author" content="会思考的鱼儿">
-<meta property="article:tag" content="blog">
+<meta property="article:tag" content="json">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006y8lVagw1f95tr49ed7j30no0csdir.jpg">
 
-<link rel="canonical" href="http://example.com/2021/04/10/2021-4-10-%E4%BD%BF%E7%94%A8hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="http://example.com/2016/10/26/2016-10-26-Json%E8%BD%AC%E6%A8%A1%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -46,7 +51,7 @@
   };
 </script>
 
-  <title>使用hexo创建博客 | 小鱼儿爸爸的博客</title>
+  <title>JSON转模型 For YYModel | 小鱼儿爸爸的博客</title>
   
 
 
@@ -190,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/10/2021-4-10-%E4%BD%BF%E7%94%A8hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2016/10/26/2016-10-26-Json%E8%BD%AC%E6%A8%A1%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -203,7 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          使用hexo创建博客
+          JSON转模型 For YYModel
         </h1>
 
         <div class="post-meta">
@@ -212,10 +217,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-10 13:15:46 / 修改时间：20:38:38" itemprop="dateCreated datePublished" datetime="2021-04-10T13:15:46+08:00">2021-04-10</time>
+              <time title="创建时间：2016-10-26 00:00:00" itemprop="dateCreated datePublished" datetime="2016-10-26T00:00:00+08:00">2016-10-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-10 20:57:59" itemprop="dateModified" datetime="2021-04-10T20:57:59+08:00">2021-04-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -237,19 +248,33 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <blockquote>
+<p>JSON转模型是我们做iOS开发的基础技能，本文将通过<a target="_blank" rel="noopener" href="https://github.com/ibireme/YYModel">YYModel</a>这个框架安全快速的完成JSON到模型的转换，其中还会介绍到一款好用的插件<a target="_blank" rel="noopener" href="https://github.com/EnjoySR/ESJsonFormat-Xcode">ESJsonFormat</a>。</p>
+</blockquote>
+<h1 id="1、首先创建模型类"><a href="#1、首先创建模型类" class="headerlink" title="1、首先创建模型类"></a>1、首先创建模型类</h1><p>创建模型类我们可以通过<a target="_blank" rel="noopener" href="https://github.com/EnjoySR/ESJsonFormat-Xcode">ESJsonFormat</a>这款插件快速完成。</p>
+<p>使用方法：</p>
+<p>将光标移动到代码行中 如下图的13行</p>
+<p>然后点击<code>Window</code>-&gt;<code>ESJsonFormat</code>-&gt;<code>Input JSON Window</code>调出窗口</p>
+<p><img src="http://ww1.sinaimg.cn/large/006y8lVagw1f95tr49ed7j30no0csdir.jpg"></p>
+<p>在窗口中输入你要解析的JSON文本，如下图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/006y8lVagw1f97s13l4b9j30jv0e8dhp.jpg"></p>
+<p>按<code>Enter</code>继续，然后神奇的一幕发生了</p>
+<p><img src="http://ww3.sinaimg.cn/large/006y8lVagw1f97s46k95tj30k30dydj9.jpg"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006y8lVagw1f97s6yp9hmj30iw0b840m.jpg"></p>
+<p>看到在.h中 所有的属性自动为你填上，而且帮你选好了类型</p>
+<p>.m 也为你声明了<code>list</code>中成员的类型，不过这里需要稍作修改，因为我们需要用到YYModel进行解析，所以方法名改成<code>modelContainerPropertyGenericClass</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">+ (NSDictionary *)modelContainerPropertyGenericClass &#123;</span><br><span class="line">    return @&#123;@&quot;list&quot; : [List class]&#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//$ hexo server</span><br></pre></td></tr></table></figure>
+<p>还有问题就是属性中出现关键字<code>id</code>，我们需要将id改为<code>teacherId</code></p>
+<p>然后在.m的<code>implementation</code>中声明,将字典的的<code>id</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ (NSDictionary *)modelCustomPropertyMapper &#123;</span><br><span class="line">    return @&#123;@&quot;teacherId&quot; : @&quot;id&quot;&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>这样，模型的创建就完成了，剩下的就是用YYModel进行解析了</p>
+<h1 id="2、使用YYModel进行解析"><a href="#2、使用YYModel进行解析" class="headerlink" title="2、使用YYModel进行解析"></a>2、使用YYModel进行解析</h1><p>解析很简单，就只需要一句话</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 将 JSON (NSData,NSString,NSDictionary) 转换为 Model:</span><br><span class="line">Model *model &#x3D; [Model yy_modelWithJSON:json];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 或者</span><br><span class="line">Model *model &#x3D; [[Model alloc] init];</span><br><span class="line">[model yy_modelSetWithDictionary:json];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>到此，简便快速的完成了JSON到模型的转换。</p>
+<p>最后，<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/25e678fa43d3">这里附上一篇YYModel的使用</a></p>
 
     </div>
 
@@ -260,7 +285,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+              <a href="/tags/json/" rel="tag"><i class="fa fa-tag"></i> json</a>
           </div>
 
         
@@ -268,11 +293,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2018/01/04/2018-01-04-%E6%9F%94%E6%9C%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E8%B0%8E%E8%A8%80/" rel="prev" title="柔术最大的谎言「译」">
-      <i class="fa fa-chevron-left"></i> 柔术最大的谎言「译」
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2016/12/13/2016-12-13-%E5%AE%9A%E6%97%B6%E5%99%A8%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E5%90%97%EF%BC%9F/" rel="next" title="定时器 你真的会使用吗？">
+      定时器 你真的会使用吗？ <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -331,7 +356,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1%E3%80%81%E9%A6%96%E5%85%88%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9E%8B%E7%B1%BB"><span class="nav-number">1.</span> <span class="nav-text">1、首先创建模型类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2%E3%80%81%E4%BD%BF%E7%94%A8YYModel%E8%BF%9B%E8%A1%8C%E8%A7%A3%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">2、使用YYModel进行解析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
